@@ -11,7 +11,6 @@ const BJ = require('./schemas/BlackjackSchema')
 
 client.on('ready', (newMember) => {
 	console.log(`Logged in as ${client.user.tag}!`);
-	
 });
 
 mongoose.connect(process.env.MONGODB_URI, {

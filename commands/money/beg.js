@@ -22,17 +22,10 @@ module.exports = {
         if (randSike == 4) {
           message.channel.send("Alright I'll let you have some")
           setTimeout(function() {
-            message.channel.send("Sike bitch, lol")
+            message.channel.send("Sike, lol")
           }, 2000);
-        }
-        else if (randSike == 3) {
-          message.channel.send("Nah bitch, stop with that shit")
-        } else if (randSike == 2) {
-          message.channel.send("Lol fuck you no")
-        } else if (randSike == 1) {
-          message.channel.send("nah")
         } else {
-          message.channel.send("Nah sorry bro, you suck too much cock")
+          message.channel.send("nah")
         }
       }
       talkedRecently.add(message.author.id);

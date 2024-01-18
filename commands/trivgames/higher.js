@@ -41,7 +41,7 @@ module.exports = {
 					}
 					else if (randNum == ans.content) {
 						if (i == 0) {
-							message.channel.send("You got it in your first try SHEEEESH!")
+							message.channel.send("You got it in your first try!!")
 							const coinAmnt = Math.floor(Math.random() * 1001) + 1000
 							message.channel.send("You got " + (coinAmnt) + " coins!")
 							balmgnt.add(targetId, coinAmnt);

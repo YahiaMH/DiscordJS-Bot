@@ -67,7 +67,7 @@ module.exports = {
           if (randAnswer + 1 == ans.content) {
             const coinAmnt = Math.floor(Math.random() * 101) + 100;
             balmgnt.add(message.author.id, coinAmnt);
-            var randomNum = Math.floor(Math.random() * 4) + 1;
+            var randomNum = Math.floor(Math.random() * 2) + 1;
             if (randomNum == 1) {
               message.reply("That was the correct answer!");
               message.channel.send("You got " + coinAmnt + " coins!");
@@ -76,29 +76,9 @@ module.exports = {
               message.reply("Damn you are pretty smart, that was right!");
               message.channel.send("You got " + coinAmnt + " coins!");
             }
-            else if (randomNum == 3) {
-              message.reply("Sheeeeesh! You got that right!");
-              message.channel.send("You got " + coinAmnt + " coins!");
-            }
-            else {
-              message.reply("Your brain is humungous!")
-              message.channel.send("You got " + coinAmnt + " coins!");
-            }
           }
           else {
-            var randomNum = Math.floor(Math.random() * 4) + 1;
-            if (randomNum == 1) {
-              message.reply("LMAOOOO, what a fuckin retard");
-            }
-            else if (randomNum == 2) {
-              message.reply("Holy shit, how can one be so fucking stupid");
-            }
-            else if (randomNum == 3) {
-              message.reply("That was the wrong answer fucking idiot");
-            }
-            else {
-              message.reply("With that small brain of yours I wouldn't be surprised if you thought the world was flat");
-            }
+						message.reply("That was an incorrect answer");
           }
         } catch (e) {
           message.reply("Why didn't you answer in time?")

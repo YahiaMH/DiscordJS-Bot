@@ -1,6 +1,3 @@
-const Discord = require('discord.js');
-let User = require('../schemas/UserSchema')
-const fs = require('fs').promises;
 const openai = require('../openai');
 const countTokens = require('../count-tokens');
 

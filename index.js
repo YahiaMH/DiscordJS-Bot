@@ -6,6 +6,7 @@ const path = require("path");
 const mongoose = require("mongoose");
 const User = require("./schemas/UserSchema");
 const BJ = require("./schemas/BlackjackSchema");
+require('dotenv').config();
 
 const prefix = ".";
 
